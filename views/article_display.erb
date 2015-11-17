@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <!-- <link rel="stylesheet" href="/home.css"> -->
+  </head>
+
+  <body>
+    <h1>Read about:
+      <% @article_list.each do |row| %>
+        <% if row[0] == @article_title%>
+        <%= @article_title %>
+        <%end%>
+      <%end%>
+    </h1>
+  </body>
+</html>

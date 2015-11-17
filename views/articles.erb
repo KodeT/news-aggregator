@@ -1,0 +1,18 @@
+<%require 'pry'%>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <!-- <link rel="stylesheet" href="/home.css"> -->
+  </head>
+
+  <body>
+    <h1>Cool Articles!</h1>
+      <% @article_list.each do |row| %>
+  
+          <li><a href="/articles/<%=row[0]%>"> Title:  <%= row[0] %>    URL:  <%= row[1] %>
+            Description:  <%= row[2] %> </a></li>
+      <%end%>
+  </body>
+</html>
